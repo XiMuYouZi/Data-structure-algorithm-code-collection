@@ -1,0 +1,294 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "01-复杂度"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "01-排序"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountingSort",
+            "request": "launch",
+            "mainClass": "com.mj.sort.CountingSort",
+            "projectName": "01-排序"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "02-动态数组"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "02-并查集"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "03-图"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "03-链表"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "04-栈"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fib",
+            "request": "launch",
+            "mainClass": "com.mj.Fib",
+            "projectName": "04-递归"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hanoi",
+            "request": "launch",
+            "mainClass": "com.mj.Hanoi",
+            "projectName": "04-递归"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(7)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "04-递归"
+        },
+        {
+            "type": "java",
+            "name": "Launch TailCall",
+            "request": "launch",
+            "mainClass": "com.mj.TailCall",
+            "projectName": "04-递归"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queens",
+            "request": "launch",
+            "mainClass": "com.mj.Queens",
+            "projectName": "05-回溯"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queens2",
+            "request": "launch",
+            "mainClass": "com.mj.Queens2",
+            "projectName": "05-回溯"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queens3",
+            "request": "launch",
+            "mainClass": "com.mj.Queens3",
+            "projectName": "05-回溯"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(8)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "05-队列"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(9)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "06-二叉搜索树2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(10)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "06-二叉搜索树"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChange",
+            "request": "launch",
+            "mainClass": "com.mj.CoinChange",
+            "projectName": "06-贪心"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(11)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "06-贪心"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pirate",
+            "request": "launch",
+            "mainClass": "com.mj.Pirate",
+            "projectName": "06-贪心"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack",
+            "request": "launch",
+            "mainClass": "com.mj.ks.Knapsack",
+            "projectName": "06-贪心"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(12)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "07-AVL树"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(13)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "07-分治"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChange(1)",
+            "request": "launch",
+            "mainClass": "com.mj.CoinChange",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack(1)",
+            "request": "launch",
+            "mainClass": "com.mj.Knapsack",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCS",
+            "request": "launch",
+            "mainClass": "com.mj.LCS",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCSubstring",
+            "request": "launch",
+            "mainClass": "com.mj.LCSubstring",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch LIS",
+            "request": "launch",
+            "mainClass": "com.mj.LIS",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSubArray",
+            "request": "launch",
+            "mainClass": "com.mj.MaxSubArray",
+            "projectName": "08-动态规划"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(14)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "08-红黑树"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(15)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "09-布隆过滤器"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(16)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "09-集合"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(17)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "10-映射"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(18)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "10-跳表"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(19)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "11-哈希表"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(20)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "12-堆"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(21)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "13-优先级队列"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(22)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "14-Trie"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(23)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "15-二叉树的非递归遍历"
+        }
+    ]
+}
