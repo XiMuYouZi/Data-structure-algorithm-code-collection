@@ -3,6 +3,7 @@ package com.mj;
 import com.mj.list.LinkedList;
 import com.mj.list.List;
 
+//双端队列
 public class Deque<E> {
 	private List<E> list = new LinkedList<>();
 	

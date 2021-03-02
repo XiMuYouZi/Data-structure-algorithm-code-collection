@@ -1,6 +1,6 @@
 package com.mj;
 
-import com.mj.circle.CircleLinkedList;
+import com.mj.circle.DoubleCircleLinkedList;
 import com.mj.circle.SingleCircleLinkedList;
 import com.mj.single.SingleLinkedList;
 import com.mj.single.SingleLinkedList.Node;
@@ -70,6 +70,7 @@ public class Main {
 		return last;
 	}
 
+	//迭代反转链表
 	static Node<String> iterativeReverseLink(Node<String> head) {
 		Node<String> prev = null;
 		Node<String> curr = head;
@@ -84,7 +85,7 @@ public class Main {
 	}
 
 	static void josephus() {
-		CircleLinkedList<Integer> list = new CircleLinkedList<>();
+		DoubleCircleLinkedList<Integer> list = new DoubleCircleLinkedList<>();
 		for (int i = 1; i <= 8; i++) {
 			list.add(i);
 		}

@@ -4,7 +4,7 @@ import com.mj.AbstractList;
 
 // 单向链表
 public class SingleLinkedList<E> extends AbstractList<E> {
-	private Node<E> first;
+	public Node<E> first;
 	
 	public static class Node<E> {
 		public E element;

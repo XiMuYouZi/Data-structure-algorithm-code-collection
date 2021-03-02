@@ -1,11 +1,11 @@
 package com.mj.circle;
 
 import com.mj.AbstractList;
-
+//单向循环链表
 public class SingleCircleLinkedList<E> extends AbstractList<E> {
-	private Node<E> first;
+	public Node<E> first;
 	
-	private static class Node<E> {
+	public static class Node<E> {
 		E element;
 		Node<E> next;
 		public Node(E element, Node<E> next) {
@@ -104,7 +104,7 @@ public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	 * @param index
 	 * @return
 	 */
-	private Node<E> node(int index) {
+	public Node<E> node(int index) {
 		rangeCheck(index);
 		
 		Node<E> node = first;

@@ -1,8 +1,8 @@
 package com.mj.circle;
 
 import com.mj.AbstractList;
-
-public class CircleLinkedList<E> extends AbstractList<E> {
+//双向循环链表
+public class DoubleCircleLinkedList<E> extends AbstractList<E> {
 	private Node<E> first;
 	private Node<E> last;
 	private Node<E> current; 

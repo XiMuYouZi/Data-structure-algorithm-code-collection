@@ -75,7 +75,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		test2();
+		// test2();
 		test3();
 		
 //		int n = 13;
