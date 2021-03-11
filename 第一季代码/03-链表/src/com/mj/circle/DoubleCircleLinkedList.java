@@ -3,11 +3,11 @@ package com.mj.circle;
 import com.mj.AbstractList;
 //双向循环链表
 public class DoubleCircleLinkedList<E> extends AbstractList<E> {
-	private Node<E> first;
+	public Node<E> first;
 	private Node<E> last;
 	private Node<E> current; 
 	
-	private static class Node<E> {
+	public static class Node<E> {
 		E element;
 		Node<E> prev;
 		Node<E> next;

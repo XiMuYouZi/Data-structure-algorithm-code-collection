@@ -210,43 +210,55 @@ public class Main {
 	
 	static void test9() {
 		Integer data[] = new Integer[] {
-				7, 4, 9, 2, 1
+				7, 4, 9, 2,3, 1,15,10,20
 		};
 		
 		BinarySearchTree<Integer> bst = new BinarySearchTree<>();
 		for (int i = 0; i < data.length; i++) {
 			bst.add(data[i]);
 		}
+		System.out.println();
 		BinaryTrees.println(bst);
-		
+		System.out.println();
+
+		System.out.print("前序遍历：");
 		bst.preorder(new Visitor<Integer>() {
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
-				return element == 2 ? true : false;
+				// return element == 2 ? true : false;
+				return false;
 			}
 		});
 		System.out.println();
 		
+		System.out.print("中序遍历：");
 		bst.inorder(new Visitor<Integer>() {
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
-				return element == 4 ? true : false;
+				// return element == 4 ? true : false;
+				return false;
+
 			}
 		});
 		System.out.println();
 		
+		System.out.print("后序遍历：");
 		bst.postorder(new Visitor<Integer>() {
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
-				return element == 4 ? true : false;
+				// return element == 4 ? true : false;
+				return false;
 			}
 		});
 		System.out.println();
 		
+		System.out.print("层序遍历：");
 		bst.levelOrder(new Visitor<Integer>() {
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
-				return element == 9 ? true : false;
+				// return element == 9 ? true : false;
+				return false;
+
 			}
 		});
 		System.out.println();

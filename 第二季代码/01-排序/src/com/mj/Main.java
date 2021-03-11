@@ -19,7 +19,7 @@ import com.mj.tools.Integers;
 public class Main {
 
 	public static void main(String[] args) {
-		Integer[] array = {7, 3, 5, 8, 6, 7, 4, 5};
+		Integer[] array = Integers.same(10000, 1000);
 		
 		testSorts(array, 
 //				new RadixSort()

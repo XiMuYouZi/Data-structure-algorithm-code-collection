@@ -1,0 +1,126 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "01-复杂度"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "02-动态数组"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "03-链表"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "04-栈"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "05-队列"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "06-二叉搜索树2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "06-二叉搜索树"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(7)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "07-AVL树"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(8)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "08-红黑树"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(9)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "09-集合"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(10)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "10-映射"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(11)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "11-哈希表"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(12)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "12-堆"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(13)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "13-优先级队列"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(14)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "14-Trie"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(15)",
+            "request": "launch",
+            "mainClass": "com.mj.Main",
+            "projectName": "15-二叉树的非递归遍历"
+        }
+    ]
+}

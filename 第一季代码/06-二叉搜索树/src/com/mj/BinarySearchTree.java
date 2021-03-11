@@ -267,10 +267,10 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		Queue<Node<E>> queue = new LinkedList<>();
 		queue.offer(root);
 
-		boolean leaf = false;
+		boolean leaf = false;//预期是否是叶子节点
 		while (!queue.isEmpty()) {
 			Node<E> node = queue.poll();
-			if (leaf && !node.isLeaf()) return false;
+			if (leaf && !node.isLeaf()) return false;//预期是叶子节点，但实际不是叶子节点
 			
 			if (node.left != null) {
 				queue.offer(node.left);
@@ -280,7 +280,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 			
 			if (node.right != null) {
 				queue.offer(node.right);
-			} else { // node.right == null
+			} else { // node.right == null &&  node.left != null 或者  node.right == null &&  node.left == null，那么剩下的节点预期全是叶子节点
 				leaf = true;
 			}
 		}
@@ -320,7 +320,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		
 		// 树的高度
 		int height = 0;
-		// 存储着每一层的元素数量
+		// 存储着每一层的元素数量，最开始root入队，所以节点个数为1
 		int levelSize = 1;
 		Queue<Node<E>> queue = new LinkedList<>();
 		queue.offer(root);
@@ -338,7 +338,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 			}
 
 			if (levelSize == 0) { // 意味着即将要访问下一层
-				levelSize = queue.size();
+				levelSize = queue.size();//每一层的节点个数就是队列长度，因为队列里面存放的都是上层的子节点
 				height++;
 			}
 		}
@@ -478,6 +478,8 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 		if (myNode.parent != null) {
 			parentString = myNode.parent.element.toString();
 		}
-		return myNode.element + "_p(" + parentString + ")";
+		// return myNode.element + "_p(" + parentString + ")";
+		return myNode.element;
+
 	}
 }

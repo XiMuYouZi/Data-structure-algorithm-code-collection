@@ -7,7 +7,7 @@ public class Hanoi {
 	}
 	
 	/**
-	 * 将 n 个碟子从 p1 挪动到 p3
+	 * 将 n 个碟子从 p1 挪动到 p3，p2是中转的柱子
 	 * @param p2 中间的柱子
 	 */
 	void hanoi(int n, String p1, String p2, String p3) {

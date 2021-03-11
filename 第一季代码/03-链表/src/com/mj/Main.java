@@ -86,23 +86,28 @@ public class Main {
 
 	static void josephus() {
 		DoubleCircleLinkedList<Integer> list = new DoubleCircleLinkedList<>();
-		for (int i = 1; i <= 8; i++) {
+		for (int i = 1; i <= 10; i++) {
 			list.add(i);
 		}
+		int stop = 0;
 
 		// 指向头结点（指向1）
 		list.reset();
 
-		while (!list.isEmpty()) {
-			list.next();
-			list.next();
-			System.out.println(list.remove());
+		while ( list.next() != null && stop<=20) {
+			Integer val1 =  list.next();
+			Integer val2 =  list.next();
+
+			System.out.println(val1);
+			System.out.println(val2);
+
+			stop++;
 		}
 	}
 
 	public static void main(String[] args) {
-		testReverseLink();
-		// josephus();
+		// testReverseLink();
+		josephus();
 
 		// testList(new ArrayList<>());
 		// testList(new LinkedList<>());

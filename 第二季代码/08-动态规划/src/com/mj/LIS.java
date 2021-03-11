@@ -2,7 +2,7 @@ package com.mj;
 
 public class LIS {
 	public static void main(String[] args) {
-		System.out.println(lengthOfLIS(new int[] {10, 2, 2, 5, 1, 7, 101, 18}));
+		System.out.println(lengthOfLIS1(new int[] {10, 2, 2, 5, 1, 7, 101, 18}));
 	}
 
 	/**
@@ -77,6 +77,8 @@ public class LIS {
 				dp[i] = Math.max(dp[i], dp[j] + 1);
 			}
 			max = Math.max(dp[i], max);
+			System.out.println(11);
+
 		}
 		return max;
 	}

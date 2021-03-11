@@ -134,6 +134,7 @@ public class ListGraph<V, E> extends Graph<V, E> {
 
 		Edge<V, E> edge = new Edge<>(fromVertex, toVertex);
 		edge.weight = weight;
+		//如果之前就存在这条边，就先移除这条边，然后再添加
 		if (fromVertex.outEdges.remove(edge)) {
 			toVertex.inEdges.remove(edge);
 			edges.remove(edge);
@@ -207,7 +208,7 @@ public class ListGraph<V, E> extends Graph<V, E> {
 	public void dfs(V begin, VertexVisitor<V> visitor) {
 		if (visitor == null) return;
 		Vertex<V, E> beginVertex = vertices.get(begin);
-		if (beginVertex == null) return;
+		if (beginVertex == null) return; 
 
 		Set<Vertex<V, E>> visitedVertices = new HashSet<>();
 		Stack<Vertex<V, E>> stack = new Stack<>();
@@ -236,11 +237,13 @@ public class ListGraph<V, E> extends Graph<V, E> {
 	@Override
 	public List<V> topologicalSort() {
 		List<V> list = new ArrayList<>();
+		// 存放的是入度为零的点
 		Queue<Vertex<V, E>> queue = new LinkedList<>();
-		Map<Vertex<V, E>, Integer> ins = new HashMap<>();
+		// 存放的是每个点的入度
+		Map<Vertex<V, E>, Integer> ins = new HashMap<>();//
 		// 初始化（将度为0的节点都放入队列）
 		vertices.forEach((V v, Vertex<V, E> vertex) -> {
-			int in = vertex.inEdges.size();
+			int in = vertex.inEdges.size();//这个点的入度数量
 			if (in == 0) {
 				queue.offer(vertex);
 			} else {
@@ -254,7 +257,8 @@ public class ListGraph<V, E> extends Graph<V, E> {
 			list.add(vertex.value);
 			
 			for (Edge<V, E> edge : vertex.outEdges) {
-				int toIn = ins.get(edge.to) - 1;
+				
+				int toIn = ins.get(edge.to) - 1;//访问过某个顶点之后，就找到这个以该顶点为出发点连接的其他顶点，把这些顶点的入度都减1
 				if (toIn == 0) {
 					queue.offer(edge.to);
 				} else {

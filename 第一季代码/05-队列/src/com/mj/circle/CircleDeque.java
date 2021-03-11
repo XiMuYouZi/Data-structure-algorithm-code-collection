@@ -104,7 +104,9 @@ public class CircleDeque<E> {
 		index += front;
 		if (index < 0) {
 			// 如果index < 1，也就是队列头的前面，超出了队列，这个时候就需要把对列头指针front挪到队尾
-			return  elements.length - 1;
+			return index + elements.length;
+			// return  elements.length - 1;
+
 		}
 		return index - (index >= elements.length ? elements.length : 0);
 	}

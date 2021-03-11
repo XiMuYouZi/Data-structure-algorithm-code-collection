@@ -64,7 +64,9 @@
             "name": "Launch Main(7)",
             "request": "launch",
             "mainClass": "com.mj.Main",
-            "projectName": "07-AVL树"
+            "projectName": "07-AVL树",
+            "shortenCommandLine":"none",
+            "console":"internalConsole"
         },
         {
             "type": "java",
@@ -122,5 +124,5 @@
             "mainClass": "com.mj.Main",
             "projectName": "15-二叉树的非递归遍历"
         }
-    ]
+    ],
 }
